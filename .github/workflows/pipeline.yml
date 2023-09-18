@@ -37,7 +37,7 @@ jobs:
   tag_release:
     needs: [simple_deployment_pipeline]
     runs-on: ubuntu-20.04
-    if: github.event_name == 'push' # 11.15 - only run on push events to the master branch
+    if: github.event_name == 'push' && !contains(github.event.head_commit.message, '#skip') # 11.15, 11.16
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
