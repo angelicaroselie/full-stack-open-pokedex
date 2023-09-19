@@ -50,11 +50,10 @@ jobs:
   discord_webhook:
     needs: [simple_deployment_pipeline]
     runs-on: ubuntu-20.04
+    if: ${{ success() }}
     steps:
       - name: Discord Webhook Notify
         uses: rjstone/discord-webhook-notify@v1.0.4
         env:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
-      - name: The job has succeeded
-        if: ${{ success() }}
             
