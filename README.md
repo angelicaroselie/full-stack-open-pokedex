@@ -1,10 +1,10 @@
-# Full Stack open CI/CD
+# Fullstackopen CI/CD
 
-#### Link to my own project: https://github.com/angelicaroselie/fullstack-phonebook-application ####
+#### Link to my own project: https://github.com/angelicaroselie/fullstack-phonebook-application
 
-This repository is used for the CI/CD module of the Full stack open course
+This repository contains tasks and assignments for the Fullstackopen course part11 offered by the University of Helsinki.
 
-Fork the repository to complete course exercises
+Please note that these tasks were completed in 2023. For my most recent projects and work, please check out my latest repositories.
 
 ## Commands
 
